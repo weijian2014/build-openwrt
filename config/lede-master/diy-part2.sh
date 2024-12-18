@@ -24,7 +24,8 @@ echo "DISTRIB_SOURCECODE='lede'" >>package/base-files/files/etc/openwrt_release
 sed -i 's/192.168.1.1/192.168.2.253/g' package/base-files/files/bin/config_generate
 
 # 网易云音乐灰色歌曲解锁
-git clone https://github.com/maxlicheng/luci-app-unblockmusic.git --directory=package/luci-app-unblockmusic
+# git clone https://github.com/maxlicheng/luci-app-unblockmusic.git --directory=package/luci-app-unblockmusic
+git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git --directory=package/luci-app-unblockneteasemusic
 
 # Replace the default software source
 # sed -i 's#openwrt.proxy.ustclug.org#mirrors.bfsu.edu.cn\\/openwrt#' package/lean/default-settings/files/zzz-default-settings
